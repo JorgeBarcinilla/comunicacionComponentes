@@ -1,0 +1,8 @@
+<div class="p-4 bg-red-500 text-white w-1/2 h-1/2">
+  <div class="flex flex-col">
+    <span class="font-bold">Componente padre</span>
+    <span class="font-light">{{user?.name}}</span>
+    <span class="font-light">Nombre enviado desde hijo: {{nombreHijo}}</span>
+  </div>
+  <app-hijo [datos]="'Datos provenientes del padre'" (enviarDatosHijo)="aceptarDatosHijo($event)"></app-hijo>
+</div>

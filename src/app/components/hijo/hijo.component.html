@@ -1,0 +1,9 @@
+<div class="p-4 bg-blue-500 text-white w-1/2 h-1/2">
+  <div class="flex flex-col">
+    <span class="font-bold">Componente hijo</span>
+    <label for="nombre">Nombre</label>
+    <input class="text-black" name="nombre" type="text" [(ngModel)]="nombre">
+    <button class="border border-green-500" (click)="enviarNombreAlPadre()">Enviar al padre</button>
+    <span class="font-light">{{datos}}</span>
+  </div>
+</div>
